@@ -20,7 +20,7 @@ import { Shimmer } from "@/components/ai-elements/shimmer";
 import { cn } from "@/lib/utils";
 import { AgentMessage } from "./agent-message";
 
-const AGENT_NAME = "spoke-and-mirror";
+const AGENT_NAME = "Spoke & Mirror";
 
 export function AgentChat() {
   const [cancellationError, setCancellationError] = useState<string>();

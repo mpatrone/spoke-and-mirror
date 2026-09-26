@@ -1,0 +1,244 @@
+{
+    "data": {
+        "runtime": {
+            "agentId": "spoke-and-mirror",
+            "agentName": "spoke-and-mirror",
+            "eveVersion": "0.41.0"
+        },
+        "trace": {
+            "spanId": "e8b13b24955b063a",
+            "traceFlags": 1,
+            "traceId": "5eb6d88a97fc6a02e2844b6f243b780f"
+        }
+    },
+    "type": "session.started",
+    "meta": {
+        "at": "2026-09-25T16:54:09.424Z",
+        "id": "evt_01M3CQT68GRQNNHS6HVBB0YSVQ"
+    }
+}
+{
+    "data": {
+        "sequence": 0,
+        "turnId": "turn_0",
+        "trace": {
+            "spanId": "e8b13b24955b063a",
+            "traceFlags": 1,
+            "traceId": "5eb6d88a97fc6a02e2844b6f243b780f"
+        }
+    },
+    "type": "turn.started",
+    "meta": {
+        "at": "2026-09-25T16:54:09.426Z",
+        "id": "evt_01M3CQT68JCRYDR4KP5E27M456"
+    }
+}
+{
+    "data": {
+        "message": "what does a basic tune-up cost?",
+        "parts": [
+            {
+                "text": "what does a basic tune-up cost?",
+                "type": "text"
+            }
+        ],
+        "sequence": 0,
+        "turnId": "turn_0"
+    },
+    "type": "message.received",
+    "meta": {
+        "at": "2026-09-25T16:54:09.427Z",
+        "id": "evt_01M3CQT68KF2RNMJGFG6P7FBX6"
+    }
+}
+{
+    "data": {
+        "modelId": "anthropic/claude-opus-4.8",
+        "sequence": 0,
+        "stepIndex": 0,
+        "turnId": "turn_0"
+    },
+    "type": "step.started",
+    "meta": {
+        "at": "2026-09-25T16:54:09.427Z",
+        "id": "evt_01M3CQT68KF2RNMJGFG6P7FBX7"
+    }
+}
+{
+    "data": {
+        "messageDelta": "Let me check",
+        "messageSoFar": "Let me check",
+        "sequence": 0,
+        "stepIndex": 0,
+        "turnId": "turn_0"
+    },
+    "type": "message.appended",
+    "meta": {
+        "at": "2026-09-25T16:54:10.727Z",
+        "id": "evt_01M3CQT7H73BQHP1HTJ9T8KXDA"
+    }
+}
+{
+    "data": {
+        "messageDelta": " our",
+        "messageSoFar": "Let me check our",
+        "sequence": 0,
+        "stepIndex": 0,
+        "turnId": "turn_0"
+    },
+    "type": "message.appended",
+    "meta": {
+        "at": "2026-09-25T16:54:10.836Z",
+        "id": "evt_01M3CQT7MMS4NTRJTNR60TF8JV"
+    }
+}
+{
+    "data": {
+        "messageDelta": " catalog for that",
+        "messageSoFar": "Let me check our catalog for that",
+        "sequence": 0,
+        "stepIndex": 0,
+        "turnId": "turn_0"
+    },
+    "type": "message.appended",
+    "meta": {
+        "at": "2026-09-25T16:54:10.854Z",
+        "id": "evt_01M3CQT7N6VTGMAHFDWW3JN0TQ"
+    }
+}
+{
+    "data": {
+        "messageDelta": ".",
+        "messageSoFar": "Let me check our catalog for that.",
+        "sequence": 0,
+        "stepIndex": 0,
+        "turnId": "turn_0"
+    },
+    "type": "message.appended",
+    "meta": {
+        "at": "2026-09-25T16:54:10.863Z",
+        "id": "evt_01M3CQT7NF6PDP474H58Y504GB"
+    }
+}
+{
+    "data": {
+        "finishReason": "tool-calls",
+        "message": "Let me check our catalog for that.",
+        "sequence": 0,
+        "stepIndex": 0,
+        "turnId": "turn_0"
+    },
+    "type": "message.completed",
+    "meta": {
+        "at": "2026-09-25T16:54:11.130Z",
+        "id": "evt_01M3CQT7XTEGTFCDPNP611D4J6"
+    }
+}
+{
+    "data": {
+        "actions": [
+            {
+                "callId": "toolu_019qamXeybwf27T1tFeWnXTU",
+                "input": {
+                    "query": "tune-up"
+                },
+                "kind": "tool-call",
+                "toolName": "lookup_service"
+            }
+        ],
+        "sequence": 0,
+        "stepIndex": 0,
+        "turnId": "turn_0"
+    },
+    "type": "actions.requested",
+    "meta": {
+        "at": "2026-09-25T16:54:11.131Z",
+        "id": "evt_01M3CQT7XV1M4662A9N6CZBR5X"
+    }
+}
+{
+    "data": {
+        "finishReason": "tool-calls",
+        "sequence": 0,
+        "stepIndex": 0,
+        "turnId": "turn_0",
+        "usage": {
+            "costUsd": 0.0366475,
+            "inputTokens": 5608,
+            "outputTokens": 64,
+            "cacheReadTokens": 0,
+            "cacheWriteTokens": 5606
+        },
+        "providerMetadata": {
+            "gateway": {
+                "generationId": "gen_01M3CQT7A8JFMWMGA6MYHXE4MR"
+            }
+        }
+    },
+    "type": "step.completed",
+    "meta": {
+        "at": "2026-09-25T16:54:11.136Z",
+        "id": "evt_01M3CQT7Y0GJ6N9M45R6YBSHZT"
+    }
+}
+{
+    "data": {
+        "requests": [
+            {
+                "action": {
+                    "callId": "toolu_019qamXeybwf27T1tFeWnXTU",
+                    "input": {
+                        "query": "tune-up"
+                    },
+                    "kind": "tool-call",
+                    "toolName": "lookup_service"
+                },
+                "allowFreeform": false,
+                "display": "confirmation",
+                "kind": "tool-approval",
+                "options": [
+                    {
+                        "id": "approve",
+                        "label": "Approve"
+                    },
+                    {
+                        "id": "cancel",
+                        "label": "Cancel"
+                    }
+                ],
+                "prompt": "Approve tool call: lookup_service",
+                "requestId": "aitxt-eVv0rSSr8d9oydR4KsdnfX3b"
+            }
+        ],
+        "sequence": 0,
+        "stepIndex": 0,
+        "turnId": "turn_0"
+    },
+    "type": "input.requested",
+    "meta": {
+        "at": "2026-09-25T16:54:11.146Z",
+        "id": "evt_01M3CQT7YA2NXW8YT5P1S72EHP"
+    }
+}
+{
+    "data": {
+        "sequence": 0,
+        "turnId": "turn_0"
+    },
+    "type": "turn.completed",
+    "meta": {
+        "at": "2026-09-25T16:54:11.147Z",
+        "id": "evt_01M3CQT7YBYRHZ8A0DDK77WDSW"
+    }
+}
+{
+    "data": {
+        "continuationToken": "wrun_01M3CQT5ZTKJ95TVEDF5MRTJMY",
+        "wait": "next-user-message"
+    },
+    "type": "session.waiting",
+    "meta": {
+        "at": "2026-09-25T16:54:11.147Z",
+        "id": "evt_01M3CQT7YBYRHZ8A0DDK77WDSX"
+    }
+}
